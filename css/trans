@@ -1,0 +1,94 @@
+#marco{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#parte-superior{
+    margin: 0 auto;
+    height: 45%;
+    border: 1px solid black;
+    background-color: black;
+}
+
+#parte-inferior{
+    margin: 0 auto;
+    height: 45%;    
+    background-color: black;
+}
+
+#borde{
+    margin: 0 auto;
+    height: 10%;    
+    background-color: black;
+}
+
+/* ESTILOS PARTE SUPERIOR*/
+/*ESTILOS MARCA*/
+
+#marca{
+    background-color: white;
+    width: 50%;
+    height: 20%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+/* ESTILOS PANTALLA */
+
+#pantalla{
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/*ESTILOS PARTE INFERIOR*/
+/*ESTILOS BOTONES SUPERIORES*/
+
+#botones-superiores{
+
+    background-color: white;
+    width: 50%;
+    height: 12%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botones-superiores{
+
+    border-radius: 50%;
+    height: 80%;
+    width: 15%;
+    background-color: red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/*ESTILOS BOTONERAS*/
+
+#botoneras{
+
+    background-color: white;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#joystick{
+    background-color: green;
+    width: 80%;
+    height: 80%;
+}
+#botones{
+
+    background-color: red;
+    width: 80%;
+    height: 80%;
+}
+
