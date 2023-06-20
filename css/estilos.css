@@ -1,98 +1,162 @@
-
 /*ESTILOS CONTAINERS*/
+
 #consola{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    height: 650px;
     width: 500px;
-    height: 700px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.8015581232492998) 2%, rgba(0,0,0,1) 15%, rgba(11,11,11,1) 85%, rgba(0,0,0,0.8015581232492998) 98%);    box-shadow: inset 0 0 10px white;
-    margin: 0 auto;
-    border-left: 25px solid red;
-    border-right: 25px solid red;
+    display: flex;
+    justify-content: space-between;
+    background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 1em;
 }
+#marco_izquierdo, #marco_derecho{
+    width: 5%;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+#parte_central{
+    width: 90%;
+    height: 99%;
+    margin: auto 0;
+}
+
+/*ESTILOS CONTENIDO*/
 
 #parte-superior{
-    margin: 0 auto;
-    width: 80%;
-    height: 45%;
+    height: 55%;
 }
-
-
-#parte-inferior{
-    margin: 0 auto;
-    width: 90%;
-    height: 50%;
-}
-
-#borde{
-    margin: 0 auto;
-    width: 100%;
-    height: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-/*ESTILOS PARTE-SUPERIOR*/
-
 #marca{
-    width: 70%;
-    height: 20%;
-    margin: 0 auto;
+    color: white;
+    text-align: center;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    width: 100%;
 }
 
 #marca h1{
+    font-size: 60px;
     margin: 0;
-    text-align: center;
-    color: white;
 }
+
+/*ESTILOS LOGO*/
+
+#logo{
+    width: 10%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#raya-izquierda, #raya-derecha{
+    height: 90%;
+    width: 25%;
+    border-bottom: 4px solid white;
+    margin: 0.1em;
+}
+
+#raya-izquierda{
+    border-right: 4px solid white;
+    border-bottom-right-radius: 80%;
+}
+
+#raya-central{
+    height: 100%;
+    background-color: white;
+    width: 10%;
+    margin: 0.1em;
+}
+
+#raya-derecha{
+    border-left: 4px solid white;
+    border-bottom-left-radius: 80%;
+}
+
+/*ESTILOS PANTALLA*/
 
 #pantalla{
+    width: 55%;
+    height: 55%;
+    margin: 1em auto;
     background-color: blue;
-    box-shadow: inset 0 0 10px black;
-    width: 70%;
-    height: 60%;
-    margin: 0 auto;
+    border: 10px solid white;
 }
 
-/*ESTILOS PARTE-INFERIOR*/
+/*ESTILOS PARTA INFERIOR*/
 
-#botones-superiores{
-    width: 55%;
+#parte-inferior{
+    width: 100%;
+    height: 45%;   
+}
+
+/*ESTILOS BOTONES-FUNCIONES*/
+
+#botones-funciones{
+    width: 45%;
     height: 15%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 1em;
 }
 
-.botones-superiores{
+.marco-botones-funciones{
+    border-radius: 50%;
+    height: 90%;
+    width: 20%;
+    background-color: white;
+}
+
+.botones-funciones{
 
     border-radius: 50%;
-    height: 60%;
-    width: 15%;
+    height: 85%;
+    width: 85%;
     background-color: red;
-    border: 2px solid white;
+    border: 2px solid black;
+    margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+/*ESTILOS BOTONERAS*/
+
 #botoneras{
     width: 100%;
-    height: 70%;
-    margin: 0 auto;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+#marco_joystick{
+    background-color: red;
+    height: 80%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+
 #joystick{
     background-color: white;
-    height: 50%;
-    width: 30%;
+    height: 70%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    border: 5px solid red;
+    padding: 5px;
+    border: 4px solid black;
     border-radius: 50%;
-    padding: 5px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
 
 #cruceta_superior, #cruceta_inferior, #cruceta_izquierda, #cruceta_derecha, #cruceta_centro {
     background-color: red;
@@ -145,25 +209,38 @@
     rgba(0, 0, 0, 0.8) 0px 7px 13px -3px, 
     rgba(0, 0, 0, 0.5) 0 0 0;
     border-radius: 50%;
-    z-index: 5;
 }
-
 
 #modelo{
     width: 100%;
-    height: 15%;
+    height: 10%;
+    text-align: center;
+} 
+
+#modelo h2{
+    margin: 0;
+    color: white;
 }
 
-/*ESTILOS BOTONERAS*/
+/*ESTILOS BOTONES*/
 
 #botones{
-    height: 50%;
-    width: 30%;
+    height: 65%;
+    width: 25%;
+    margin-right: 3em;
     border: 5px solid red;
     border-radius: 50%;
+}
+
+#marco_botones{
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #boton_superior, #boton_inferior, #boton_izquierda, #boton_derecha{
@@ -175,7 +252,6 @@
 
 #boton_superior{
     grid-row: 1 / 3;
-    
 }
 
 #boton_inferior{
@@ -196,8 +272,6 @@
     transform: translateX(-20px);
     grid-column: 1 / 3;
 }
-
-
 
 #boton_superior{
     transform: translateY(-20px);
